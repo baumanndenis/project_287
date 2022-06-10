@@ -1,2 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+header {
+    background-color: white;
+    padding: 1vw;
+    background-color: #f0f0f0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 18%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 4vw;
+}
+
+header li {
+    margin-left: 10vw;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header li:hover {
+    color: #0070B4;
+    text-decoration: underline;
+}
+
+.mb-3 {
+    width: 70%;
+}
+
+.forminatorus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-top: 5vw;
+}
