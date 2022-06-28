@@ -11,25 +11,139 @@
 </head>
 <body>
 <header>
+    <a href="./index.html"><img src="img/logo.png" alt="Logo des Fussballclubs"></a>
     <nav>
-        <a href="./index.html"><img src="img/logo.png" alt="Logo des Fussballclubs"></a>
+
         <ul>
-            <li><a href="termine.html">Termine</a></li>
-            <li><a href="teams.html">Teams</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="hauptpunkte"><a href="galerie.html">Archiv</a></li>
+            <li class="hauptpunkte"><div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Teams
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">1. Mannschaft</a></li>
+                    <li><a class="dropdown-item" href="#">2. Mannschaft</a></li>
+                    <li><a class="dropdown-item" href="#">Junioren B</a></li>
+                    <li><a class="dropdown-item" href="#">Junioren C</a></li>
+                    <li><a class="dropdown-item" href="#">Junioren D</a></li>
+                    <li><a class="dropdown-item" href="#">Junioren Ea</a></li>
+                    <li><a class="dropdown-item" href="#">Junioren Eb</a></li>
+                    <li><a class="dropdown-item" href="#">Junioren F</a></li>
+
+                </ul>
+            </div></li>
+            <li class="hauptpunkte"><a href="ueberuns.html">Über uns</a></li>
+            <li class="hauptpunkte"><a href="kontakt.html">Kontakt</a></li>
+            <li><div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+
+            <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+            <nav id="hamburgerNav">
+                <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+                <!--  &times; stellt das X dar -->
+                <ul>
+                    <li><a onclick="closeNav()" href="./faq.html">&nbsp;FAQ &nbsp;</a></li>
+                    <li><a onclick="closeNav()" href="./beitraege.html">&nbsp;Beiträge&nbsp;</a></li>
+                    <li><a onclick="closeNav()" href="./contact.html">&nbsp;Kontakt&nbsp;</a></li>
+                    <li><a onclick="closeNav()" href="#">&nbsp;Sprache&nbsp;</a></li>
+                    <li><a onclick="closeNav()" href="#">&nbsp;EN&nbsp;</a></li>
+                </ul>
+            </nav></li>
         </ul>
     </nav>
 
+
 </header>
 <main>
-
-
+    <section class="sections">
+    <div class="card" style="width: 18rem;">
+        <img src="./img/DSC05895.JPG" class="card-img-top" alt="Platzhalter ">
+        <div class="card-body">
+            <h5 class="card-title">Interview mit dem Spieler</h5>
+            <p class="card-text">Ein kurzes Interview mit dem Star unserer ersten Mannschaft, Walter Frosch.</p>
+            <a href="./audio.html" class="btn btn-primary">Zum Beitrag</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="./img/DSC05951.JPG" class="card-img-top" alt="Platzhalter ">
+        <div class="card-body">
+            <h5 class="card-title">Ca-Junioren mit Sieg
+            </h5>
+            <p class="card-text">Die Ca-Junioren überzeugten als Mannschaft und zeigten eine Willensleistung</p>
+            <a href="./galerie.html" class="btn btn-primary">Zum Beitrag</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="./img/play.jpg" class="card-img-top" alt="Platzhalter ">
+        <div class="card-body">
+            <h5 class="card-title">Highlights des "Eins"</h5>
+            <p class="card-text">Die erste Mannschaft blickt auf eine Saison mit Höhen und Tiefen zurück</p>
+            <a href="./video.html" class="btn btn-primary">Zum Beitrag</a>
+        </div>
+    </div>
+    </section>
+    <section class="sections">
+        <div class="card" style="width: 18rem;">
+            <img src="./img/platzhalter.jpg" class="card-img-top" alt="Platzhalter ">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./img/platzhalter.jpg" class="card-img-top" alt="Platzhalter ">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./img/platzhalter.jpg" class="card-img-top" alt="Platzhalter ">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </section>
 
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </main>
+<script>
+
+    function dropdown() {
+        if (document.getElementById("dropdown-content").style.display == "block") {
+            document.getElementById("dropdown-content").style.display = "none";
+
+        }
+        else {
+            document.getElementById("dropdown-content").style.display = "block";
+
+        }
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    function openNav() {
+        document.getElementById("hamburgerNav").style.width = "100%";
+        document.getElementById("hamburgerNav").style.width = "100%";
+
+    }
+    function closeNav() {
+        document.getElementById("hamburgerNav").style.width = "0%";
+    }
+</script>
 </body>
 </html>
 
