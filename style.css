@@ -9,7 +9,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
 }
+body {
+   background-color: lightslategray;
+}
+
 
 nav {
     display: flex;
@@ -125,10 +130,13 @@ nav#hamburgerNav {
     /* Hat eine Breite von 0, wird also nicht angezeigt */
     top: 0;
     right: 0;
-    padding-top: 110px;
+    padding-top: 80px;
     overflow-x: hidden;
     transition: 1s;
     background-color: #38668E;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
 }
 
 nav#hamburgerNav ul {
@@ -144,7 +152,7 @@ nav#hamburgerNav ul {
 nav#hamburgerNav .closebtn {
     position: absolute;
     top: 1rem;
-    right: 3rem;
+    right: 1rem;
     font-size: 5rem;
     font-family: 'Oswald', sans-serif;
 }
@@ -191,6 +199,7 @@ ul.dropdown-menu.show {
     border: none!important;
     border-radius: 0!important;
     background-color: rgba(0,0,0,0.8)!important;
+    z-index: 999!important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -214,11 +223,23 @@ ul.dropdown-menu.show {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0vw 17vw;
+    margin: 0rem 17vw 10vw 17vw;
+    z-index: 0;
+
+}
+
+.sections1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 17vw 2vw 17vw;
+    z-index: 0;
+
 }
 
 .card {
     margin-top: 3rem;
+    z-index: 0!important;
 }
 
 @media screen and (max-width: 1300px) {
@@ -227,8 +248,18 @@ ul.dropdown-menu.show {
         flex-direction: column;
         align-items: center;
     }
+    .sections1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+}
 
+.carouselkleiner {
+    display: flex!important;
+    justify-content: center!important;
+    padding: 0% 8%;
 }
 
 .videojahr {
@@ -243,3 +274,129 @@ ul.dropdown-menu.show {
     padding: 0 8%;
 }
 
+.titelaufjederseite {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 7rem;
+    padding-top: 3rem;
+}
+
+
+.textaufjederseite {
+    padding: 3rem;
+}
+.artikelaufjederseite {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 4rem;
+    height: max-content;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .artikelaufjederseite {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    .textaufjederseite {
+        padding: 0 2rem;
+    }
+    .titelaufjederseite {
+        padding: 3rem 4rem;
+    }
+
+
+
+}
+
+
+footer {
+    display: flex ;
+    align-items: center;
+    flex-direction: row;
+    background-color: #f0f0f0;
+    height: 6rem;
+    justify-content: center;
+    margin-top: 2rem;
+
+    width: 100%;
+}
+
+footer div {
+    margin:0 2rem;
+    text-decoration: none!important;
+    color: black!important;
+}
+
+footer a{
+    color: black!important;
+    text-decoration: none!important;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.4rem;
+        font-size: 0.8rem;
+    }
+    .scheissstrich {
+        display: none;
+    }
+
+
+}
+
+.bilddesspartans {
+    display: flex;
+    justify-content: center;
+}
+
+.bilddesspartans img {
+    width: 20%;
+}
+
+.btn.btn-secondary.btn-lg {
+    background-color: black;
+    color: white;
+    padding: 2vw 3vw;
+    font-size: 2.5vw;
+
+}
+
+.btn.btn-secondary.btn-lg:hover {
+    background-color: white;
+    color: black!important;
+}
+
+.titel2aufjederseite {
+    font-size: 2rem;2
+    font-weight: 700;
+    padding: 0 7rem;
+    padding-top: 1rem;
+    margin-bottom: 8vw;
+
+}
+
+.titel3aufjederseite {
+    font-size: 2rem;2
+font-weight: 700;
+    margin: 0 7rem;
+    margin-top: 1rem;
+    padding: 1vw;
+    color: black;
+    background-color: white;
+}
+
+button a {
+    text-decoration: none!important;
+    color: white!important;
+}
+
+.carousel-control-prev-icon {
+    color: black!important;
+
+}
