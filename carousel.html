@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FC Zürisee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>FC Zürisee</title>
+  <link rel="icon" type="image/png" href="./img/logo.png">
+</head>
+<body>
+<header>
+  <a href="./index.html"><img src="img/logo.png" alt="Logo des Fussballclubs"></a>
+  <nav>
+
+    <ul>
+      <li class="hauptpunkte"><a href="galerie.html">Archiv</a></li>
+      <li class="hauptpunkte"><div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Teams
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">1. Mannschaft</a></li>
+          <li><a class="dropdown-item" href="#">2. Mannschaft</a></li>
+          <li><a class="dropdown-item" href="#">Junioren B</a></li>
+          <li><a class="dropdown-item" href="#">Junioren C</a></li>
+          <li><a class="dropdown-item" href="#">Junioren D</a></li>
+          <li><a class="dropdown-item" href="#">Junioren Ea</a></li>
+          <li><a class="dropdown-item" href="#">Junioren Eb</a></li>
+          <li><a class="dropdown-item" href="#">Junioren F</a></li>
+
+        </ul>
+      </div></li>
+      <li class="hauptpunkte"><a href="ueberuns.html">Über uns</a></li>
+      <li class="hauptpunkte"><a href="kontakt.html">Kontakt</a></li>
+      <li><div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+
+        <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+        <nav id="hamburgerNav">
+          <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+          <!--  &times; stellt das X dar -->
+          <ul>
+            <li><a onclick="closeNav()" href="./galerie.html">&nbsp;Archiv &nbsp;</a></li>
+            <li><a onclick="closeNav()" href="#">1. Mannschaft</a></li>
+            <li><a onclick="closeNav()" href="#">2. Mannschaft</a></li>
+            <li><a onclick="closeNav()" href="#">Junioren B</a></li>
+            <li><a onclick="closeNav()" href="#">Junioren C</a></li>
+            <li><a onclick="closeNav()" href="#">Junioren D</a></li>
+            <li><a onclick="closeNav()" href="#">Junioren Ea</a></li>
+            <li><a onclick="closeNav()" href="#">Junioren Eb</a></li>
+            <li><a onclick="closeNav()" href="#">Junioren F</a></li>
+            <li><a onclick="closeNav()" href="./ueberuns.html">Über Uns</a></li>
+            <li><a onclick="closeNav()" href="./kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav></li>
+    </ul>
+  </nav>
+  </ul>
+  </nav>
+
+</header>
+<main>
+
+<div class="carouselkleiner">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/DSC05990.JPG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/DSC06016.JPG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/DSC05895.JPG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/DSC05951.JPG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/DSC05998.JPG" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</main>
+<footer>
+  <div>FC Zürichsee&#169;</div><div class="scheissstrich">-</div><div>Musterstrasse 67</div><div class="scheissstrich">-</div><div>9191 Musterort</div><div class="scheissstrich">-</div><div><a href="mailto:kontakt@fczh-see.ch">kontakt@fczh-see.ch</a></div>
+</footer>
+<script>
+
+  function dropdown() {
+    if (document.getElementById("dropdown-content").style.display == "block") {
+      document.getElementById("dropdown-content").style.display = "none";
+
+    }
+    else {
+      document.getElementById("dropdown-content").style.display = "block";
+
+    }
+  }
+
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  function openNav() {
+    document.getElementById("hamburgerNav").style.width = "100%";
+    document.getElementById("hamburgerNav").style.width = "100%";
+
+  }
+  function closeNav() {
+    document.getElementById("hamburgerNav").style.width = "0%";
+  }
+</script>
+</body>
+</html>
+
+
